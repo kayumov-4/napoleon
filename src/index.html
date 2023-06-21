@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- build css -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>Napoleon</title>
+  </head>
+  <body>
+    <header class="bg-white w-full fixed top-0 z-10">
+      <div class="container max-w-[1360px] px-5 mx-auto">
+        <nav class="flex items-center justify-between h-20 text-[#3A3A3A]">
+          <div class="flex items-center">
+            <a href="#"><img src="./assets/icons/menu.svg" alt="menu" /></a>
+            <ul class="list flex gap-x-8 ml-5 text-[18px]">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Торты</a></li>
+              <li><a href="#">Десерты в баночках</a></li>
+              <li><a href="#">Покупателям</a></li>
+            </ul>
+          </div>
+          <h1 class="text-center text-[30px] font-[Medium]">NapoleonCake</h1>
+          <div class="flex items-center">
+            <div class="">
+              <h2 class="text-[22px]">8 800 200-95-70</h2>
+              <p class="font-[Light] mt-[-10px] text-[12px] text-end">
+                Ежедневно с 8:00 до 20:00
+              </p>
+            </div>
+            <div class="imgs flex gap-x-[30px] ml-[73px]">
+              <a href="#"><img src="./assets/icons/phone.svg" alt="" /></a>
+              <a href="#"><img src="./assets/icons/search.svg" alt="" /></a>
+              <a href="#"><img src="./assets/icons/profile.svg" alt="" /></a>
+              <a href="#"><img src="./assets/icons/favourite.svg" alt="" /></a>
+              <a href="#"><img src="./assets/icons/cart.svg" alt="" /></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="mt-[80px] text-[#3A3A3A]">
+      <section id="hero" class="relative">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div
+            class="slider max-w-[1320px] h-[435px] rounded-[15px] overflow-hidden"
+          >
+            <div class="slides flex">
+              <img src="./assets/images/slide.jpg" alt="" />
+              <img src="https://picsum.photos/id/39/1320/435" alt="" />
+              <img src="https://picsum.photos/id/392/1320/435" alt="" />
+              <img src="https://picsum.photos/id/349/1320/435" alt="" />
+              <img src="https://picsum.photos/id/249/1320/435" alt="" />
+              <img src="https://picsum.photos/id/539/1320/435" alt="" />
+            </div>
+            <div
+              class="btns w-[1290px] flex items-center justify-between absolute top-[187px] ml-[15px]"
+            >
+              <div
+                id="prev"
+                class="flex items-center justify-center rounded-full bg-white w-[45px] h-[45px]"
+              >
+                <img src="./assets/icons/left.svg" alt="" />
+              </div>
+              <div
+                id="next"
+                class="flex items-center justify-center rounded-full bg-white w-[45px] h-[45px]"
+              >
+                <img src="./assets/icons/right.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center mt-[15px]">
+            <img src="./assets/icons/top.svg" alt="" />
+            <p class="text-[#3A3A3A] text-[20px]">Наверх</p>
+          </div>
+        </div>
+      </section>
+      <section id="new_arrivals" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Новинки</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="new_arrivals_wrapper"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="traditional" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Традиционные торты</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="traditional_wrapper"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="sale" class="mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="bg-[#F4EBCF] h-[435px] w-full p-[30px]">
+            <h3 class="text-[34px]">Акция дня</h3>
+            <div class="flex items-center justify-between">
+              <p class="text-[60px] leading-[77px] mt-[-30px] font-extrabold">
+                ТРИ ШОКОЛАДА В БАНОЧКЕ <br />
+                СО СКИДКОЙ 30%
+              </p>
+              <img
+                class="mr-[50px]"
+                src="./assets/images/tri_shokolada.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="deserts" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Десерты в баночках</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="deserts_wrapper"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="new_arrivals_second" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Новинки</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="new_arrivals_wrapper_second"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="bento" class="mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div
+            class="bg-[#FDE8F7] h-[435px] w-full p-[30px] flex items-center justify-center gap-x-[150px]"
+          >
+            <p class="text-[80px] leading-[77px] font-extrabold">
+              БЕНТО ДЕСЕРТЫ <br />
+              В БАНОЧКЕ
+            </p>
+            <img class="" src="./assets/images/bento.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="new_arrivals_third" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Новинки</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="new_arrivals_wrapper_third"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="new_arrivals_fourth" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Новинки</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="new_arrivals_wrapper_fourth"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+      <section id="zefir" class="mt-[50px] mb-[100px]">
+        <div class="container max-w-[1360px] px-5 mx-auto">
+          <div class="flex items-center justify-between mb-5">
+            <h3 class="text-[26px] tracking-[0.1em]">Новинки</h3>
+            <div class="flex items-center text-[26px]">
+              <p>Все</p>
+              <img
+                class="mb-[-3px]"
+                src="./assets/icons/right_mini.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            id="zefir_wrapper"
+            class="wrapper flex items-center justify-between"
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</html>

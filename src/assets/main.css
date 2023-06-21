@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: Book;
+  src: url(./fonts/FuturaPTBook.ttf);
+}
+
+@font-face {
+  font-family: Demi;
+  src: url(./fonts/FuturaPTDemi.otf);
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url(./fonts/FuturaPTMedium.ttf);
+}
+
+@font-face {
+  font-family: "Light";
+  src: url(./fonts/FuturaPTLight.otf);
+}
+
+body {
+  font-family: Book;
+}
+
+.slides {
+  transition: all 0.3s ease;
+}
