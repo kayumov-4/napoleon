@@ -28,6 +28,7 @@ prev.addEventListener("click", () => {
   slider();
 });
 
+// --------------------------Wrappers---------------------------
 let new_arrivals_wrapper = document.querySelector("#new_arrivals_wrapper");
 let new_arrivals_wrapper_second = document.querySelector(
   "#new_arrivals_wrapper_second"
@@ -41,11 +42,12 @@ let new_arrivals_wrapper_fourth = document.querySelector(
 let traditional_wrapper = document.querySelector("#traditional_wrapper");
 let deserts_wrapper = document.querySelector("#deserts_wrapper");
 let zefir_wrapper = document.querySelector("#zefir_wrapper");
+// --------------------------Wrappers---------------------------
 
 function toHtml(data, place) {
   let result = "";
   data.map((el) => {
-    const { title, price, weight, amount, liked, img, isLiked } = el;
+    const { title, price, weight, amount, liked, img } = el;
     result += `
       <div class="card h-[420px] w-[300px] p-[10px]  rounded-2xl">
         <img src=${img} alt="" />
